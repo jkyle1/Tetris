@@ -19,6 +19,40 @@
             android:layout_marginVertical="16dp"
             android:layout_marginTop="@dimen/layout_margin_top"
             android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:gravity="center_horizontal">
+            android:gravity="center">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TETRIS"
+            android:textSize="80sp"/>
+    <TextView
+            android:id="@+id/tv_high_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High score: 0"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/layout_margin_top"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+        <Button
+                android:id="@+id/btn_new_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New game"/>
+        <Button
+                android:id="@+id/btn_reset_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset score"/>
+        <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exit"/>
+    </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
